@@ -22,7 +22,6 @@ public class SolarSystemCamera : MonoBehaviour
     public float moveSmoothness = 0.12f;
 
     [Header("Focus (tecla F)")]
-    [Tooltip("Objeto al que vuela la cámara al pulsar F. Si está vacío, usa el origen.")]
     public Transform focusTarget;
     public float focusDistance = 30f;
     public float focusSpeed = 5f;
