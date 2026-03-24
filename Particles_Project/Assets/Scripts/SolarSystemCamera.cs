@@ -74,11 +74,7 @@ public class SolarSystemCamera : MonoBehaviour
 
         float speed = moveSpeed * (Input.GetKey(KeyCode.LeftShift) ? shiftMultiplier : 1f);
 
-        Vector3 input = new Vector3(
-            Input.GetAxisRaw("Horizontal"),                         
-            (Input.GetKey(KeyCode.E) ? 1f : 0f) - (Input.GetKey(KeyCode.Q) ? 1f : 0f), 
-            Input.GetAxisRaw("Vertical")                             
-        );
+        Vector3 input = new Vector3(Input.GetAxisRaw("Horizontal"),(Input.GetKey(KeyCode.E) ? 1f : 0f) - (Input.GetKey(KeyCode.Q) ? 1f : 0f),Input.GetAxisRaw("Vertical"));
 
         targetVelocity = transform.TransformDirection(input.normalized) * speed;
         smoothVelocity = Vector3.Lerp(smoothVelocity, targetVelocity, 1f - moveSmoothness);

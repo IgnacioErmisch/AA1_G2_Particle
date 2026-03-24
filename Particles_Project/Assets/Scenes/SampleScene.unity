@@ -2150,7 +2150,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   simulationSpeed: 0.1
-  stepsPerFrame: 10
+  stepsPerFrame: 50
   simulatedYears: 0
 --- !u!4 &1434823895
 Transform:
